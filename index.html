@@ -156,4 +156,40 @@ e <em>texto em itálico</em>.</p>
 </body>
         <h1> Teste branch teste</h1>
 
+<video width="800" height="450" controls poster="thumbnail.jpg">
+    <source src="video.mp4" type="video/mp4">
+    <source src="video.webm" type="video/webm">
+    <source src="video.ogg" type="video/ogg">
+    <p>Seu navegador não suporta o elemento video.</p>
+</video>      
+
+<audio controls preload="metadata">
+    <source src="musica.mp3" type="audio/mpeg">
+    <source src="musica.ogg" type="audio/ogg">
+    <source src="musica.wav" type="audio/wav">
+    <p>Seu navegador não suporta o elemento audio.</p>
+</audio>
+
+<audio id="player" preload="metadata">
+    <source src="podcast.mp3" type="audio/mpeg">
+</audio>
+
+<div class="controls">
+    <button onclick="playPause()">▶️/⏸️</button>
+    <input type="range" id="progress" min="0" max="100" value="0">
+    <input type="range" id="volume" min="0" max="1" step="0.1" value="0.5">
+</div>
+
+<iframe src="https://www.youtube.com/embed/VIDEO_ID" 
+        width="560" height="315" 
+        frameborder="0" 
+        allowfullscreen>
+</iframe>
+
+<object data="documento.pdf" type="application/pdf" 
+        width="800" height="600">
+    <p>Seu navegador não pode exibir PDFs. 
+       <a href="documento.pdf">Baixe o arquivo</a>.</p>
+</object>
+
 </html>
