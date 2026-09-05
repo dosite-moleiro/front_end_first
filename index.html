@@ -192,4 +192,39 @@ e <em>texto em itálico</em>.</p>
        <a href="documento.pdf">Baixe o arquivo</a>.</p>
 </object>
 
+<canvas id="meuCanvas" width="800" height="600">
+    Seu navegador não suporta canvas.
+</canvas>
+
+<svg width="400" height="300" xmlns="http://www.w3.org/2000/svg">
+    <!-- Retângulo -->
+    <rect x="50" y="50" width="150" height="100" 
+          fill="#3498db" stroke="#2980b9" stroke-width="2"/>
+    
+    <!-- Círculo -->
+    <circle cx="300" cy="100" r="50" 
+            fill="#e74c3c" opacity="0.8"/>
+    
+    <!-- Linha -->
+    <line x1="50" y1="200" x2="350" y2="200" 
+          stroke="#34495e" stroke-width="3"/>
+    
+    <!-- Texto -->
+    <text x="200" y="250" text-anchor="middle" 
+          font-family="Arial" font-size="20" fill="#2c3e50">
+        Gráfico SVG
+    </text>
+</svg>
+
+<svg width="300" height="200">
+    <!-- Bezier curve -->
+    <path d="M50,150 Q150,50 250,150" 
+          stroke="#9b59b6" stroke-width="3" fill="none"/>
+    
+    <!-- Polígono (estrela) -->
+    <polygon points="150,20 176,92 250,92 192,138 218,210 150,164 82,210 108,
+    138 50,92 124,92"
+             fill="#f39c12" stroke="#e67e22" stroke-width="2"/>
+</svg>
+
 </html>
